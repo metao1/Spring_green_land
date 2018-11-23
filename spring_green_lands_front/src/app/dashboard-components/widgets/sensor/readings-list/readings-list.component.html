@@ -1,0 +1,57 @@
+<div class="panel panel-success">
+  <div class="panel-heading">
+    {{heading}}
+  </div>
+  <ul class="panel-body-list">
+
+    <!-- TEMPERATURE COMPONENT LIST -->
+    <li *ngIf="moisture.length > 0" class="panel-body-list-title" (click)="toggleTemperatureUnit()">
+        <span>Temperature</span>
+        <ul>
+          <li *ngFor="let t of moisture">
+            {{t.alias}}
+            <span *ngIf="temperatureUnit === 'celsius'" class="label label-default pull-right">
+              {{ t.current }} *C
+            </span>
+            <span *ngIf="temperatureUnit === 'fahrenheit'" class="label label-default pull-right">
+              {{ t.current | celsiusToFahrenheit }} *F
+            </span>
+          </li>
+        </ul>
+    </li>
+
+    <!-- HUMIDITY COMPONENT LIST -->
+    <li *ngIf="humidity.length > 0" class="panel-body-list-title">
+        <span>Humidity</span>
+        <ul>
+          <li *ngFor="let h of humidity">
+            {{h.alias}}
+            <span class="label label-default pull-right">{{h.current}} %</span>
+          </li>
+        </ul>
+    </li>
+
+    <!-- PROXIMITY COMPONENT LIST -->
+    <li *ngIf="proximity.length > 0" class="panel-body-list-title">
+        <span>Proximity</span>
+        <ul>
+          <li *ngFor="let p of proximity">
+            {{p.alias}}
+            <span class="label label-default pull-right">{{p.current}} %</span>
+          </li>
+        </ul>
+    </li>
+
+    <!-- MOISTURE COMPONENT LIST -->
+    <li *ngIf="moisture.length > 0" class="panel-body-list-title">
+        <span>Moisture</span>
+        <ul>
+          <li *ngFor="let m of moisture">
+            {{m.alias}}
+            <span class="label label-default pull-right">{{m.current}} %</span>
+          </li>
+        </ul>
+    </li>
+
+  </ul>
+</div>

@@ -1,0 +1,62 @@
+<!-- TOP FIXED NAVBAR -->
+<div *ngIf="isShown()" [@signal]='signal' class="navbar navbar-inverse navbar-fixed-top">
+
+  <!-- BEGIN : NAVBAR-HEADER -->
+  <div class="navbar-header">
+    <!--<a href="#" class="navbar-brand">Gro</a> -->
+    <button class="navbar-toggle"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-main">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <!-- END : NAVBAR-HEADER -->
+
+
+  <!-- BEGIN : NAVBAR-MENU -->
+  <div class="navbar-collapse collapse" id="navbar-main">
+
+    <!-- LEFT NAVBAR BUTTONS -->
+    <ul class="nav navbar-nav">
+      <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a [routerLink]="['/dashboard']" (click)="goDashboard()">
+          <i class="fa fa-tachometer fa-icon-margin"></i>
+          Dashboard
+        </a>
+      </li>
+      <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a [routerLink]="['/schedule']">
+          <i class="fa fa-file-text fa-icon-margin" (click)="goScheduling()"></i>
+          Scheduling
+        </a>
+      </li>
+      <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a [routerLink]="['/settings/component']" (click)="goSetting()">
+          <i class="fa fa-gears fa-icon-margin"></i>
+          Settings
+        </a>
+      </li>
+    </ul>
+    <!-- END : LEFT NAVBAR BUTTONS -->
+
+    <!-- RIGHT NAVBAR BUTTONS -->
+    <ul class="nav navbar-nav pull-right">
+      <li>
+        <a (click)="logout()">
+          <i class="fa fa-unlock-alt fa-icon-margin"></i>
+          Logout
+        </a>
+      </li>
+    </ul>
+    <!-- END : RIGHT NAVBAR BUTTONS -->
+
+    <gro-notification-dropdown></gro-notification-dropdown>
+
+  </div>
+  <!-- END : NAVBAR-MENU -->
+
+</div>
+<!-- END TOP FIXED NAVBAR -->

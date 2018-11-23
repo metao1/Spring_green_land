@@ -1,0 +1,48 @@
+<div class="container-fluid">
+
+  <!-- BEGIN : Page Loading Spinner -->
+  <div class="row" *ngIf="isLoading">
+    <gro-page-loader></gro-page-loader>
+  </div>
+  <!-- END : Page Loading Spinner -->
+
+  <!-- BEGIN : Layout -->
+  <div *ngIf="layout && !isLoading" class="row">
+    <span *ngFor="let panel of layout.panels">
+      <span *ngIf="panel.type === panelType.FIXED_SIDE_LEFT">
+        <gro-fixed-side-panel
+            [configuration]="panel.configuration">
+        </gro-fixed-side-panel>
+      </span>
+      <span *ngIf="panel.type === panelType.CENTER">
+        <gro-panel
+            [configuration]="panel.configuration">
+        </gro-panel>
+      </span>
+      <span *ngIf="panel.type === panelType.FIXED_SIDE_RIGHT">
+        <gro-fixed-side-panel
+            [configuration]="panel.configuration">
+        </gro-fixed-side-panel>
+      </span>
+    </span>
+  </div>
+</div>
+
+
+<!-- END : Layout -->
+
+<!-- TODO: Make resuable alert message that is centered in page -->
+<div id="alert-blank-dashboard" *ngIf="!layout && !isLoading" class="row navbar-adjustment">
+  <div class="col-sm-12 col-md-6 col-lg-4 col-md-push-3 col-lg-push-4">
+    <div class="alert alert-info">
+      <i class="fa fa-info"></i> <strong>Info: </strong>
+      Please select a layout or load saved dashboard.
+    </div>
+  </div>
+</div>
+
+<gro-dashboard-builder-toolbar
+    *ngIf="!isLoading"
+    (onAddComponent)="onAddComponent($event)"
+    (onChangeLayoutPreset)="onChangeLayoutPreset($event)">
+</gro-dashboard-builder-toolbar>

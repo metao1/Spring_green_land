@@ -1,0 +1,90 @@
+<div class="container-fluid">
+  <div class="row" *ngIf="isLoading">
+    <gro-page-loader></gro-page-loader>
+  </div>
+  <div class="row" *ngIf="!isLoading">
+
+    <!-- BUTTON : Dasboard Builder - fixed in lower left -->
+    <div id="dashboard-builder-button">
+      <button
+        class="btn btn-sm btn-default"
+        [routerLink]="['/dashboard/builder']">
+        <i class="fa fa-wrench"></i>
+        Dashboard Builder
+      </button>
+    </div>
+
+    <!-- BEGIN : LEFT SIDE COLUMN -->
+    <div class="col-sm-12 col-md-4 col-lg-2">
+      <nav class="navbar navbar-default navbar-fixed-side navbar-adjustment">
+        <div class="container">
+          <div class="navbar-collapse">
+            <div class="container-fluid">
+
+              <!-- BEGIN : SENSOR READINGS -->
+              <div class="row">
+                <div class="col-xs-12">
+                  <gro-readings-list></gro-readings-list>
+                </div>
+              </div>
+              <!-- END : SENSOR READINGS -->
+
+              <!-- BEGIN : RELAY PANEL -->
+              <div class="row">
+                <div class="col-xs-12">
+                  <gro-relays></gro-relays>
+                </div>
+              </div>
+              <!-- END: RELAY PANEL -->
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- END : LEFT SIDE COLUMN -->
+
+    <!-- BEGIN : CENTER COLUMN -->
+    <div class="col-sm-12 col-md-8 col-lg-10">
+      <div id="content" class="navbar-adjustment">
+        <!-- CONTENT WILL GO HERE : GRAPHS, TABLES ETC -->
+
+        <!-- BEGIN: Main Graph-Table Component -->
+        <div class="row">
+          <div class="col-xs-12">
+            <gro-graph-table>
+            </gro-graph-table>
+          </div>
+          <!--<div class="col-sm-12 col-md-6">
+            <gro-graph-table>
+            </gro-graph-table>
+          </div>-->
+        </div>
+
+      </div>
+    </div>
+    <!-- END : CENTER COLUMN -->
+
+    <div class="col-sm-12 col-md-4 col-lg-2">
+      <nav class="navbar navbar-default navbar-fixed-side navbar-adjustment">
+        <div class="container">
+          <div class="navbar-collapse">
+            <div class="container-fluid">
+              <div class="row">
+                <gro-simple-reading
+                  [atrib]="'temperature'"></gro-simple-reading>
+              </div>
+              <div class="row">
+                <gro-simple-reading
+                  [atrib]="'humidity'"></gro-simple-reading>
+              </div>
+              <div class="row">
+                <gro-simple-reading
+                  [atrib]="'moisture'"></gro-simple-reading>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>

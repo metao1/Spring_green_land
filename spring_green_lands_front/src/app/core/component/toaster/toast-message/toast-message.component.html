@@ -1,0 +1,22 @@
+<div id="toast-message" *ngIf="!dismissed" class="alert dropshadow" [ngClass]="message.type">
+
+  <!-- ICONS & MESSAGE -->
+  <span>
+    <i class="fa fa-check-circle .fa-icon-margin"
+       *ngIf="message.type === toastType.SUCCESS"></i>
+    <i class="fa fa-info-circle .fa-icon-margin"
+       *ngIf="message.type === toastType.INFO || message.type == toastType.DEFAULT"></i>
+    <i class="fa fa-exclamation-triangle .fa-icon-margin"
+       *ngIf="message.type === toastType.WARNING || message.type === toastType.DANGER"></i>
+    {{ message.message }}
+  </span>
+
+  <!-- DISMISS BUTTON -->
+  <button
+      type="button"
+      class="close"
+      (click)="dismiss()">
+    <span>&times;</span>
+  </button>
+  
+</div>
