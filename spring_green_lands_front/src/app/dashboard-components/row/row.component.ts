@@ -4,7 +4,7 @@ import {Column} from '@app/shared/model/dashboard/configuration/column/column.mo
 import {RowConfiguration} from '@app/shared/model/dashboard/configuration/row/row.configuration';
 
 @Component({
-  selector: 'gro-row',
+  selector: 'app-row',
   templateUrl: './row.component.html',
   styleUrls: ['./row.component.css']
 })

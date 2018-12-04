@@ -10,7 +10,7 @@ import {MetricCalculation} from '@app/shared/model/dashboard/configuration/widge
 import {MetricDataType} from '@app/shared/model/dashboard/configuration/widget/graph/graph-table/data-source/metric-data-type.enum';
 
 @Component({
-  selector: 'gro-graph-table-data',
+  selector: 'app-graph-table-data',
   templateUrl: './graph-table-data.component.html',
   styleUrls: ['./graph-table-data.component.css']
 })

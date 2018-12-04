@@ -5,7 +5,7 @@ import {Layout} from '@app/shared/model/dashboard/configuration/layout/layout.mo
 import {PanelType} from '@app/shared/model/dashboard/configuration/panel/panel-type.enum';
 
 @Component({
-  selector: 'gro-dashboard-builder',
+  selector: 'app-dashboard-builder',
   templateUrl: './dashboard-builder.component.html',
   styleUrls: ['./dashboard-builder.component.css']
 })

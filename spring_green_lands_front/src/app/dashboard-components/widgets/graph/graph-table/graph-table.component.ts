@@ -12,7 +12,7 @@ import {MetricDataType} from '@app/shared/model/dashboard/configuration/widget/g
 import {ToastType} from '@app/core/component/toaster/toast-type.enum';
 
 @Component({
-  selector: 'gro-graph-table',
+  selector: 'app-graph-table',
   templateUrl: './graph-table.component.html',
   styleUrls: ['./graph-table.component.css']
 })

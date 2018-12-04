@@ -7,7 +7,7 @@ import {SimpleRelayConfiguration} from '@app/shared/model/dashboard/configuratio
 import {SseService} from '@app/core/service/sse/sse.service';
 
 @Component({
-  selector: 'gro-simple-relay',
+  selector: 'app-simple-relay',
   templateUrl: './simple-relay.component.html',
   styleUrls: ['./simple-relay.component.css']
 })

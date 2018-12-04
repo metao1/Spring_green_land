@@ -10,7 +10,7 @@ import {SettingsRPiComponentService} from '@app/settings/settings-rpicomponent/s
 
 
 @Component({
-  selector: 'gro-settings-rpicomponent',
+  selector: 'app-settings-rpicomponent',
   templateUrl: './settings-rpicomponent.component.html',
   styleUrls: ['./settings-rpicomponent.component.css']
 })

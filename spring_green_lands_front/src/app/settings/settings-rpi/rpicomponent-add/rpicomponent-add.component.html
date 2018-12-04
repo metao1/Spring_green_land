@@ -1,13 +1,12 @@
 <form (ngSubmit)="submit(form.value)" [formGroup]="form" novalidate>
 
   <!-- BEGIN : ERROR OUTPUT -->
-  <gro-alert *ngIf="errorShown"
-             [message]="errorMessage"></gro-alert>
+  <app-alert *ngIf="errorShown"
+             [message]="errorMessage"></app-alert>
   <!-- END : ERROR OUTPUT -->
 
   <!-- INPUT ALIAS -->
-  <div class="form-group"
-       [ngClass]="{'has-warning':!form.controls['alias'].valid && form.controls['alias'].touched  }">
+  <div class="form-group">
     <label class="sr-only"
            for="alias">Alias</label>
 
@@ -26,8 +25,7 @@
 
 
   <!-- INPUT PIN -->
-  <div class="form-group"
-       [ngClass]="{'has-warning':!form.controls['pin'].valid && form.controls['pin'].touched }">
+  <div class="form-group">
     <label class="sr-only"
            for="pin">Pin</label>
 
@@ -46,8 +44,7 @@
 
 
   <!-- INPUT COMPONENT TYPE -->
-  <div class="form-group"
-       [ngClass]="{'has-warning':!form.controls['type'].valid && form.controls['type'].touched }" >
+  <div class="form-group">
     <label class="sr-only"
            for="type">Type</label>
 
@@ -81,9 +78,8 @@
   <!-- FORM BUTTONS -->
   <div class="form-group pull-right">
     <button type="submit"
-            class="btn btn-success btn-sm"
-            [disabled]="!form.valid">
-      {{ formSettings.submitLabel }}
+            class="btn btn-success btn-sm">
+      Submit
     </button>
     <button *ngIf="formSettings.isClearable" type="reset"
             class="btn btn-default btn-sm">

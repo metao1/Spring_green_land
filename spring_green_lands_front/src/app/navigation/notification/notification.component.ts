@@ -4,7 +4,7 @@ import {Notification} from '@app/shared/model/notification/notification.model';
 import {NotificationService} from '@app/core/service/notification/notification.service';
 
 @Component({
-  selector: 'gro-notification',
+  selector: 'app-notification',
   templateUrl: './notification.component.html',
   styleUrls: ['./notification.component.css']
 })

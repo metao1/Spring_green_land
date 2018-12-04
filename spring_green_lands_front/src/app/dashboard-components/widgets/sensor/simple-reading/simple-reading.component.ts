@@ -4,7 +4,7 @@ import {SensorReadingType} from '@app/shared/model/dashboard/configuration/share
 import {SseService} from '@app/core/service/sse/sse.service';
 
 @Component({
-  selector: 'gro-simple-reading',
+  selector: 'app-simple-reading',
   templateUrl: './simple-reading.component.html',
   styleUrls: ['./simple-reading.component.css']
 })

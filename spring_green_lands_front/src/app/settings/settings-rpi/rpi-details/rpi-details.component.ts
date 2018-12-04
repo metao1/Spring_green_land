@@ -8,7 +8,7 @@ import {SystemState} from '@app/shared/model/rpi/system-state.enum';
 import {BASE_IMAGE_URL} from '@app/core/service/base-api-url.default';
 
 @Component({
-  selector: 'gro-rpi-details',
+  selector: 'app-rpi-details',
   templateUrl: './rpi-details.component.html',
   styleUrls: ['./rpi-details.component.css']
 })

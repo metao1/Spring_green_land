@@ -7,7 +7,7 @@ import {Page} from '@app/shared/model/paging/page.model';
 import {ToasterService} from '@app/core/component/toaster/toaster.service';
 
 @Component({
-  selector: 'gro-notification-dropdown',
+  selector: 'app-notification-dropdown',
   templateUrl: './notification-dropdown.component.html',
   styleUrls: ['./notification-dropdown.component.css']
 })

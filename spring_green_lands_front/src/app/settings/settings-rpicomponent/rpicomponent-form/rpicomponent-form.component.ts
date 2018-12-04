@@ -2,9 +2,12 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {RPiComponentType} from '@app/shared/model/rpicomponent/rpicomponent-type.enum';
 import {RPiComponent} from '@app/shared/model/rpicomponent/rpicomponent.model';
+import {ToastType} from '@app/core/component/toaster/toast-type.enum';
+import {RPiComponentService} from '@app/core/service/rpicomponent/rpicomponent.service';
+import {ToasterService} from '@app/core/component/toaster/toaster.service';
 
 @Component({
-  selector: 'gro-rpicomponent-form',
+  selector: 'app-rpicomponent-form',
   templateUrl: './rpicomponent-form.component.html',
   styleUrls: ['./rpicomponent-form.component.css']
 })
@@ -22,7 +25,9 @@ export class RPiComponentFormComponent implements OnInit {
   errorShown: boolean;
   errorMessage: string;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder,
+              private toasterService: ToasterService,
+  private rPiComponentService: RPiComponentService) {
     this.form = formBuilder.group({
       alias: ['', Validators.required],
       pin: ['', Validators.required],
@@ -34,11 +39,20 @@ export class RPiComponentFormComponent implements OnInit {
   ngOnInit() {
   }
 
-  submit(component: RPiComponent){
-    this.onFormSubmit.emit(component);
+  submit(value: any) {
+    console.log(JSON.stringify( value));
+    this.onFormSubmit.emit(value);
+    this.rPiComponentService.save(value)
+      .subscribe(
+        data => {
+          this.resetForm();
+          this.toasterService.toast("Component successfully added", ToastType.SUCCESS);
+        },
+        error => this.toasterService.toast("Error adding new component", ToastType.WARNING)
+      );
   }
 
-  reset() {
+  resetForm() {
     this.form.reset();
   }
 }

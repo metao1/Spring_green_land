@@ -4,7 +4,7 @@ import {SettingsRPiComponentService} from '../../settings-rpicomponent.service';
 import {RPiComponentType} from '@app/shared/model/rpicomponent/rpicomponent-type.enum';
 
 @Component({
-  selector: 'gro-rpicomponent-filter',
+  selector: 'app-rpicomponent-filter',
   templateUrl: './rpicomponent-filter.component.html',
   styleUrls: ['./rpicomponent-filter.component.css']
 })

@@ -3,7 +3,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {Notification} from '@app/shared/model/notification/notification.model';
 
 @Component({
-  selector: 'gro-notification-list',
+  selector: 'app-notification-list',
   templateUrl: './notification-list.component.html',
   styleUrls: ['./notification-list.component.css']
 })

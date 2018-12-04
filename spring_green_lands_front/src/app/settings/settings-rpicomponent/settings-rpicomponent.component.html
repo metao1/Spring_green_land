@@ -1,17 +1,17 @@
 <div class="row" *ngIf="isLoading">
-  <gro-page-loader></gro-page-loader>
+  <app-page-loader></app-page-loader>
 </div>
 <div class="row" *ngIf="!isLoading">
   <div class="col-sm-12 col-md-6 col-lg-7">
     <div class="panel panel-default">
       <div class="panel-body">
-        <gro-rpicomponent-table></gro-rpicomponent-table>
+        <app-rpicomponent-table></app-rpicomponent-table>
       </div>
     </div>
   </div>
   <div class="col-sm-12 col-md-6 col-lg-5">
-    <gro-rpi-pinout
+    <app-rpi-pinout
         [pins]="pins">
-    </gro-rpi-pinout>
+    </app-rpi-pinout>
   </div>
 </div>

@@ -2,7 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {ModalConfirm} from './modal-confirm.model';
 
 @Component({
-  selector: 'gro-modal-confirm',
+  selector: 'app-modal-confirm',
   templateUrl: './modal-confirm.component.html',
   styleUrls: ['./modal-confirm.component.css']
 })

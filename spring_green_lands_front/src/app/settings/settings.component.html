@@ -7,9 +7,9 @@
           <div class="navbar-collapse">
 
             <!-- BEGIN : SETTINGS SIDE NAVIGATION -->
-            <gro-settings-navigation (onViewChange)="onViewChange($event)"
+            <app-settings-navigation (onViewChange)="onViewChange($event)"
                                      [view]="view">
-            </gro-settings-navigation>
+            </app-settings-navigation>
             <!-- END : SETTINGS SIDE NAVIGATION -->
 
           </div>
@@ -22,9 +22,9 @@
     <div class="col-sm-12 col-md-8 col-lg-10">
       <div id="content" class="navbar-adjustment" [ngSwitch]="view">
         <!-- CONTENT WILL GO HERE : GRAPHS, TABLES ETC -->
-        <gro-settings-rpicomponent *ngSwitchCase="'rpicomponent'"></gro-settings-rpicomponent>
-        <gro-settings-schedule *ngSwitchCase="'schedule'"></gro-settings-schedule>
-        <gro-settings-user *ngSwitchCase="'user'"></gro-settings-user>
+        <app-settings-rpicomponent *ngSwitchCase="'rpicomponent'"></app-settings-rpicomponent>
+        <app-settings-schedule *ngSwitchCase="'schedule'"></app-settings-schedule>
+        <app-settings-user *ngSwitchCase="'user'"></app-settings-user>
       <router-outlet name="settings"></router-outlet>
       </div>
     </div>

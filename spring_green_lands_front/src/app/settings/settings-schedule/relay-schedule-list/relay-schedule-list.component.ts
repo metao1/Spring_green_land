@@ -3,7 +3,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {RelayScheduleJob} from '@app/shared/model/rpicomponent/relay-schedule-job.model';
 
 @Component({
-  selector: 'gro-relay-schedule-list',
+  selector: 'app-relay-schedule-list',
   templateUrl: './relay-schedule-list.component.html',
   styleUrls: ['./relay-schedule-list.component.css']
 })

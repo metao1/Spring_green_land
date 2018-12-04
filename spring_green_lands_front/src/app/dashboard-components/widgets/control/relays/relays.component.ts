@@ -6,7 +6,7 @@ import {RelayService} from '@app/core/service/relay/relay.service';
 import {SseService} from '@app/core/service/sse/sse.service';
 
 @Component({
-  selector: 'gro-relays',
+  selector: 'app-relays',
   templateUrl: './relays.component.html',
   styleUrls: ['./relays.component.css']
 })

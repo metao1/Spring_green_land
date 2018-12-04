@@ -18,10 +18,10 @@
 
            <!-- ADD ROWS FROM CONFIGURATION -->
            <div *ngIf="configuration.rows.length > 0">
-             <gro-row
+             <app-row
                  *ngFor="let row of configuration.rows"
                  [configuration]="row.configuration">
-             </gro-row>
+             </app-row>
            </div>
 
         </div>

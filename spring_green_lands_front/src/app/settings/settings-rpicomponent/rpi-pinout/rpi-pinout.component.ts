@@ -5,7 +5,7 @@ import {RPiPin} from '@app/shared/model/rpipin/rpi-pin.model';
 import {SettingsRPiComponentService} from '../settings-rpicomponent.service';
 
 @Component({
-  selector: 'gro-rpi-pinout',
+  selector: 'app-rpi-pinout',
   templateUrl: './rpi-pinout.component.html',
   styleUrls: ['./rpi-pinout.component.css']
 })

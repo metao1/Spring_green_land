@@ -134,10 +134,10 @@
                     [disabled]="isLoading"
                     (click)="updateData()">
                   <span *ngIf="!isLoading">Get Data</span>
-                  <gro-simple-loader
+                  <app-simple-loader
                       [isLoading]="isLoading"
                       [size]="'xsmall'">
-                  </gro-simple-loader>
+                  </app-simple-loader>
                 </button>
               </div>
             </div>

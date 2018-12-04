@@ -5,7 +5,7 @@ import {Row} from '@app/shared/model/dashboard/configuration/row/row.model';
 import {Widget} from '@app/shared/model/dashboard/configuration/widget/widget.model';
 
 @Component({
-  selector: 'gro-column',
+  selector: 'app-column',
   templateUrl: './column.component.html',
   styleUrls: ['./column.component.css']
 })

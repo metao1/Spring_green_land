@@ -7,7 +7,7 @@ import {RPiComponentType} from '@app/shared/model/rpicomponent/rpicomponent-type
 import {SettingsRPiComponentService} from '../../settings-rpicomponent.service';
 
 @Component({
-  selector: '[gro-rpicomponent-list]',
+  selector: '[app-rpicomponent-list]',
   templateUrl: './rpicomponent-list.component.html',
   styleUrls: ['./rpicomponent-list.component.css']
 })

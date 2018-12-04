@@ -3,7 +3,7 @@ import {Component, OnInit} from '@angular/core';
 import {PageLoading} from '@app/shared/component/page-loader/page-loading';
 
 @Component({
-  selector: 'gro-settings-user',
+  selector: 'app-settings-user',
   templateUrl: './settings-user.component.html',
   styleUrls: ['./settings-user.component.css']
 })

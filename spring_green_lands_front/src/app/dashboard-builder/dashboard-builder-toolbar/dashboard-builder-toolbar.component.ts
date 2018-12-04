@@ -3,7 +3,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {LayoutPresets} from '@app/shared/model/dashboard/configuration/layout/layout-presets';
 
 @Component({
-  selector: 'gro-dashboard-builder-toolbar',
+  selector: 'app-dashboard-builder-toolbar',
   templateUrl: './dashboard-builder-toolbar.component.html',
   styleUrls: ['./dashboard-builder-toolbar.component.css']
 })

@@ -2,7 +2,7 @@
 
   <!-- BEGIN : Page Loading Spinner -->
   <div class="row" *ngIf="isLoading">
-    <gro-page-loader></gro-page-loader>
+    <app-page-loader></app-page-loader>
   </div>
   <!-- END : Page Loading Spinner -->
 
@@ -10,19 +10,19 @@
   <div *ngIf="layout && !isLoading" class="row">
     <span *ngFor="let panel of layout.panels">
       <span *ngIf="panel.type === panelType.FIXED_SIDE_LEFT">
-        <gro-fixed-side-panel
+        <app-fixed-side-panel
             [configuration]="panel.configuration">
-        </gro-fixed-side-panel>
+        </app-fixed-side-panel>
       </span>
       <span *ngIf="panel.type === panelType.CENTER">
-        <gro-panel
+        <app-panel
             [configuration]="panel.configuration">
-        </gro-panel>
+        </app-panel>
       </span>
       <span *ngIf="panel.type === panelType.FIXED_SIDE_RIGHT">
-        <gro-fixed-side-panel
+        <app-fixed-side-panel
             [configuration]="panel.configuration">
-        </gro-fixed-side-panel>
+        </app-fixed-side-panel>
       </span>
     </span>
   </div>
@@ -41,8 +41,8 @@
   </div>
 </div>
 
-<gro-dashboard-builder-toolbar
+<app-dashboard-builder-toolbar
     *ngIf="!isLoading"
     (onAddComponent)="onAddComponent($event)"
     (onChangeLayoutPreset)="onChangeLayoutPreset($event)">
-</gro-dashboard-builder-toolbar>
+</app-dashboard-builder-toolbar>

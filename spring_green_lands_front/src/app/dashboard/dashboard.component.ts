@@ -3,7 +3,7 @@ import {PageLoading} from '../shared/component/page-loader/page-loading';
 import {DASHBOARD_DEFAULT} from '@app/shared/model/dashboard/dashboard.default';
 
 @Component({
-  selector: 'gro-dashboard',
+  selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })

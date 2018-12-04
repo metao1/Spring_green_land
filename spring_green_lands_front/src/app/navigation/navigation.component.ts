@@ -3,7 +3,7 @@ import {AuthenticationService} from '@app/authentication/authentication.service'
 import {Router} from '@angular/router';
 
 @Component({
-    selector: 'gro-navigation',
+    selector: 'app-navigation',
     templateUrl: './navigation.component.html',
     styleUrls: ['./navigation.component.css'],
     animations: [

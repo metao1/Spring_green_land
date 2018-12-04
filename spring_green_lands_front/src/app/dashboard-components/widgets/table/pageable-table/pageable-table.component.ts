@@ -3,7 +3,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Page} from '@app/shared/model/paging/page.model';
 
 @Component({
-  selector: 'gro-pageable-table',
+  selector: 'app-pageable-table',
   templateUrl: './pageable-table.component.html',
   styleUrls: ['./pageable-table.component.css']
 })

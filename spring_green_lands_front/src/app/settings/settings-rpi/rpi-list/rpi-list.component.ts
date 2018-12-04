@@ -3,7 +3,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {RPi} from '@app/shared/model/rpi/rpi.model';
 
 @Component({
-  selector: 'gro-rpi-list',
+  selector: 'app-rpi-list',
   templateUrl: './rpi-list.component.html',
   styleUrls: ['./rpi-list.component.css']
 })

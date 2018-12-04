@@ -2,7 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {graphPresets} from './graph-presets';
 
 @Component({
-  selector: 'gro-graph',
+  selector: 'app-graph',
   templateUrl: './graph.component.html',
   styleUrls: ['./graph.component.css']
 })

@@ -3,7 +3,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {BASE_API_URL} from '@app/core/service/base-api-url.default';
 
 @Component({
-  selector: 'gro-rpi-upload-image',
+  selector: 'app-rpi-upload-image',
   templateUrl: './rpi-upload-image.component.html',
   styleUrls: ['./rpi-upload-image.component.css']
 })

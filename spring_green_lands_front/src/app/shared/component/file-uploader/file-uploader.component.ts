@@ -3,7 +3,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {FileUploader} from 'ng2-file-upload/ng2-file-upload';
 
 @Component({
-  selector: 'gro-file-uploader',
+  selector: 'app-file-uploader',
   templateUrl: './file-uploader.component.html',
   styleUrls: ['./file-uploader.component.css']
 })

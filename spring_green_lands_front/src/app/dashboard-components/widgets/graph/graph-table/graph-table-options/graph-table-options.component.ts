@@ -4,7 +4,7 @@ import {GraphType} from '@app/shared/model/dashboard/configuration/widget/graph/
 import {OrientationType} from '@app/shared/model/dashboard/configuration/widget/graph/graph-table/orientation-type.enum';
 
 @Component({
-  selector: 'gro-graph-table-options',
+  selector: 'app-graph-table-options',
   templateUrl: './graph-table-options.component.html',
   styleUrls: ['./graph-table-options.component.css']
 })

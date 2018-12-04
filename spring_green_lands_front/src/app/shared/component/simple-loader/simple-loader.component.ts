@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'gro-simple-loader',
+  selector: 'app-simple-loader',
   templateUrl: './simple-loader.component.html',
   styleUrls: ['./simple-loader.component.css']
 })

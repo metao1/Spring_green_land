@@ -7,7 +7,7 @@ import {ToasterService} from '@app/core/component/toaster/toaster.service';
 import {ToastType} from '@app/core/component/toaster/toast-type.enum';
 
 @Component({
-  selector: 'gro-rpicomponent-table',
+  selector: 'app-rpicomponent-table',
   templateUrl: './rpicomponent-table.component.html',
   styleUrls: ['./rpicomponent-table.component.css']
 })

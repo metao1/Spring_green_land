@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
-  selector: 'gro-settings-navigation',
+  selector: 'app-settings-navigation',
   templateUrl: './settings-navigation.component.html',
   styleUrls: ['./settings-navigation.component.css']
 })

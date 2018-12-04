@@ -13,7 +13,7 @@ import {ToasterService} from '@app/core/component/toaster/toaster.service';
 import {ToastType} from '@app/core/component/toaster/toast-type.enum';
 
 @Component({
-  selector: 'gro-readings-list',
+  selector: 'app-readings-list',
   templateUrl: './readings-list.component.html',
   styleUrls: ['./readings-list.component.css']
 })

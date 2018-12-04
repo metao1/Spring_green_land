@@ -1,6 +1,6 @@
 <!-- BEGIN : Loading Spinner -->
 <div class="row" *ngIf="isLoading">
-  <gro-page-loader></gro-page-loader>
+  <app-page-loader></app-page-loader>
 </div>
 <!-- END : Loading Spinner -->
 
@@ -12,12 +12,12 @@
     <div class="panel panel-default">
       <div class="panel-heading">Currently Saved Schedules</div>
       <div class="panel-body">
-        <gro-relay-schedule-list
+        <app-relay-schedule-list
             [schedules]="schedules"
             (editSchedule)="editSchedule($event)"
             (deleteSchedule)="deleteSchedule($event)"
             (toggleSchedule)="toggleSchedule($event)">
-        </gro-relay-schedule-list>
+        </app-relay-schedule-list>
       </div>
     </div>
   </div>
@@ -27,9 +27,9 @@
   <div class="col-sm-12 col-md-6 col-lg-5">
     <div class="panel panel-default">
       <div class="panel-body">
-        <gro-relay-schedule-form
+        <app-relay-schedule-form
           (onFormSubmit)="saveSchedule($event)">
-        </gro-relay-schedule-form>
+        </app-relay-schedule-form>
       </div>
     </div>
   </div>

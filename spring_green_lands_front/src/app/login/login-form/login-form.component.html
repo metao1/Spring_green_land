@@ -2,8 +2,8 @@
 <form (ngSubmit)="submit(form.value)" [formGroup]="form" novalidate>
 
   <!-- BEGIN : ERROR OUTPUT -->
-  <gro-alert *ngIf="errorShown"
-             [message]="errorMessage"></gro-alert>
+  <app-alert *ngIf="errorShown"
+             [message]="errorMessage"></app-alert>
   <!-- END : ERROR OUTPUT -->
 
   <!-- INPUT USERNAME -->

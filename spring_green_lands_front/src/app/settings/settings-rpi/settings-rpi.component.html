@@ -1,11 +1,11 @@
 <div class="row">
   <div class="col-xs-12">
-    <gro-rpi-list
+    <app-rpi-list
         [rpis]="rpis"
-        (onDelete)="onDelete($event)"></gro-rpi-list>
+        (onDelete)="onDelete($event)"></app-rpi-list>
   </div>
 </div>
-<gro-modal-confirm
+<app-modal-confirm
     [modalConfirm]="modalConfirm"
     (onConfirm)="onConfirm($event)">
-</gro-modal-confirm>
+</app-modal-confirm>

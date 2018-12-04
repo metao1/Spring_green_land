@@ -7,7 +7,7 @@ import {Row} from '@app/shared/model/dashboard/configuration/row/row.model';
 import {RowConfiguration} from '@app/shared/model/dashboard/configuration/row/row.configuration';
 
 @Component({
-  selector: 'gro-fixed-side-panel',
+  selector: 'app-fixed-side-panel',
   templateUrl: './fixed-side-panel.component.html',
   styleUrls: ['./fixed-side-panel.component.css']
 })

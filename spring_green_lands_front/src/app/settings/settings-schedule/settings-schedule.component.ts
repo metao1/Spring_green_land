@@ -8,7 +8,7 @@ import {ToasterService} from '@app/core/component/toaster/toaster.service';
 import {ToastType} from '@app/core/component/toaster/toast-type.enum';
 
 @Component({
-  selector: 'gro-settings-schedule',
+  selector: 'app-settings-schedule',
   templateUrl: './settings-schedule.component.html',
   styleUrls: ['./settings-schedule.component.css']
 })

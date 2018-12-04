@@ -5,7 +5,7 @@ import {AuthenticationService} from '@app/authentication/authentication.service'
 
 
 @Component({
-  selector: 'gro-login-form',
+  selector: 'app-login-form',
   templateUrl: './login-form.component.html',
   styleUrls: ['./login-form.component.css']
 })

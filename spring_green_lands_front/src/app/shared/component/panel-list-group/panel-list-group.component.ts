@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'gro-panel-list-group',
+  selector: 'app-panel-list-group',
   templateUrl: './panel-list-group.component.html',
   styleUrls: ['./panel-list-group.component.css']
 })

@@ -5,7 +5,7 @@ import {Row} from '@app/shared/model/dashboard/configuration/row/row.model';
 import {RowConfiguration} from '@app/shared/model/dashboard/configuration/row/row.configuration';
 
 @Component({
-  selector: 'gro-panel',
+  selector: 'app-panel',
   templateUrl: './panel.component.html',
   styleUrls: ['./panel.component.css']
 })

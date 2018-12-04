@@ -11,7 +11,7 @@ import {ToasterService} from '@app/core/component/toaster/toaster.service';
 import {ToastType} from '@app/core/component/toaster/toast-type.enum';
 
 @Component({
-  selector: 'gro-relay-schedule-form',
+  selector: 'app-relay-schedule-form',
   templateUrl: './relay-schedule-form.component.html',
   styleUrls: ['./relay-schedule-form.component.css']
 })

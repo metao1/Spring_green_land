@@ -6,7 +6,7 @@ import {RPi} from '@app/shared/model/rpi/rpi.model';
 import {ModalConfirm} from '@app/shared/component/modal-confirm/modal-confirm.model';
 
 @Component({
-  selector: 'gro-settings-rpi',
+  selector: 'app-settings-rpi',
   templateUrl: './settings-rpi.component.html',
   styleUrls: ['./settings-rpi.component.css']
 })

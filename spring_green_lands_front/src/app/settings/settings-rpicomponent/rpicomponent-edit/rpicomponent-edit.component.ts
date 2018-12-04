@@ -4,7 +4,7 @@ import {ActivatedRoute} from '@angular/router';
 import {RPiComponent} from '@app/shared/model/rpicomponent/rpicomponent.model';
 
 @Component({
-  selector: 'gro-rpicomponent-edit',
+  selector: 'app-rpicomponent-edit',
   templateUrl: './rpicomponent-edit.component.html',
   styleUrls: ['./rpicomponent-edit.component.css']
 })

@@ -4,7 +4,7 @@ import {ToastMessage} from '../toast-message.model';
 import {ToastType} from '../toast-type.enum';
 
 @Component({
-  selector: 'gro-toast-message',
+  selector: 'app-toast-message',
   templateUrl: './toast-message.component.html',
   styleUrls: ['./toast-message.component.css']
 })

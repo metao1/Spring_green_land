@@ -5,7 +5,7 @@ import {ToasterService} from './toaster.service';
 import {ToasterLocation} from './toaster-location.enum';
 
 @Component({
-  selector: 'gro-toaster',
+  selector: 'app-toaster',
   templateUrl: './toaster.component.html',
   styleUrls: ['./toaster.component.css']
 })
