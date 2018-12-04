@@ -2,7 +2,7 @@
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/gro?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-    username: mehrdad
+    username: root
     password: mehrdad
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
@@ -66,5 +66,7 @@ twilio:
     inbound: TWILIO INBOUND PHONE NUMBER
     outbound: TWILIO OUTBOUND PHONE NUMBER
 
-    
-     
+
+
+server:
+  port: 8080

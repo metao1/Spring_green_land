@@ -30,4 +30,8 @@ public class DatabaseIntegrationTest extends BaseTest {
     }
 
 
+    @Override
+    protected void extendSetup() {
+
+    }
 }
