@@ -1,18 +1,15 @@
 package com.gro;
 
+import com.gro.security.MicromonitorProperties;
 import com.gro.simulator.SchedulerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.aspectj.EnableSpringConfigured;
-import org.springframework.integration.annotation.IntegrationComponentScan;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 @SpringBootApplication
-@EnableSpringConfigured
-@IntegrationComponentScan
-@EnableSwagger2
+@EnableConfigurationProperties({MicromonitorProperties.class})
 public class GroApplication implements CommandLineRunner {
 
     public static void main(String[] args) {

@@ -1,7 +1,5 @@
 package com.gro.model;
 
-import com.gro.security.model.User;
-
 import java.io.Serializable;
 
 /**
