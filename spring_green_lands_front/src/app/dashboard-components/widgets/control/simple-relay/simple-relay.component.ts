@@ -26,8 +26,7 @@ export class SimpleRelayComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.subscription = this.sseService
-      .relayState
+    this.subscription = this.sseService.relayState
       .subscribe(
         relay => {
           console.log('processing event...');
